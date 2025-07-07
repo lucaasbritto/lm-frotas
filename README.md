@@ -47,22 +47,22 @@ cd lm-frotas
 ```
 
 2. **Copie o arquivo .env**
-cp .env.example .env
+- cp .env.example .env
 
 3. **Suba os containers com Docker**
-docker-compose up -d
+- docker-compose up -d
 
 4. **Instale as dependências do PHP**
-docker-compose exec app composer install
+- docker-compose exec app composer install
 
 5. **Gere a chave da aplicação**
-docker-compose exec app php artisan key:generate
+- docker-compose exec app php artisan key:generate
 
 6. **Rode as migrações e os seeders**
-docker-compose exec app php artisan migrate --seed
+- docker-compose exec app php artisan migrate --seed
 
 7. **Acesse no navegador**
-Acesse http://localhost para visualizar o projeto.
+- Acesse http://localhost:8080/ para visualizar o projeto.
 
 
 
