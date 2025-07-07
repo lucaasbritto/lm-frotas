@@ -47,7 +47,7 @@ cd lm-frotas
 ```
 
 2. **Copie o arquivo .env**
-  - cp .env.example .env
+  - cp app/.env.example app/.env
 
 3. **Suba os containers com Docker**
   - docker-compose up -d
